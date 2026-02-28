@@ -1,0 +1,114 @@
+Create a mature, premium, respectful website dedicated to Guru Tegh Bahadur Ji.
+The entire website text must be written in pure Gurmukhi Punjabi, but the numbers will remain normal (like 1621, 1675, etc.).
+The website must look spiritual, calm, and historically rich — like a digital museum, not a kids’ site.
+Build the following sections:
+
+1. Home Page (Introduction + Moral)
+
+Hero section with a respectful image of Guru Tegh Bahadur Ji
+
+Title in Gurmukhi Punjabi, for example:
+“ਸ਼੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦੁਰ ਜੀ — ਧਰਮ ਤੇ ਮਨੁੱਖੀ ਅਧਿਕਾਰਾਂ ਦੇ ਰਖਿਆਕਰਤਾ”
+
+Overview of the website written in Gurmukhi
+
+Section for the moral, teachings, and message of Guru Sahib (Gurmukhi text)
+
+Highlighted quote in Gurmukhi:
+“ਕਾਹੂ ਕਉ ਦੇਤੁ ਨ ਡਰੈ, ਨਾਹੁ ਡਰਾਵੈ।”
+
+2. Biography Section (With Left Timeline Panel)
+
+Full, detailed biography written entirely in Gurmukhi Punjabi
+
+On the left side, add a fixed vertical timeline titled “ਵਿਸ਼ੇਸ਼ ਤਰੀਖਾਂ”
+
+Timeline entries should use normal numbers like this:
+
+1621 – ਜਨਮ
+
+1635 – ਕਰਤਾਰਪੁਰ ਦੀ ਲੜਾਈ
+
+1664 – ਗੁਰਤਾ ਗੱਦੀ
+
+1665–1675 – ਉਦੇਸੀ ਯਾਤਰਾ
+
+1675 – ਸ਼ਹੀਦੀ
+
+When a date is clicked, the page should scroll to that detailed part of the biography.
+
+3. Shabad / Bani / Raag Section
+
+All Shabads written by Guru Tegh Bahadur Ji in pure Gurmukhi
+
+Meanings explained in Gurmukhi Punjabi
+
+Add Prof. Sahib Singh Ji’s Gurmukhi teeka/explanation
+
+Provide an audio player to listen to Shabad, Raag, and explanations
+
+Include Raag details in Gurmukhi:
+
+Raag name
+
+Time
+
+Mood
+
+Significance
+
+4. Gurudwara Sahib Section
+
+Display all historic Gurudwaras connected to the life of Guru Tegh Bahadur Ji
+
+Each Gurudwara card must contain:
+
+Name in Gurmukhi Punjabi
+
+Image
+
+Full history and details in Gurmukhi (content will be provided separately)
+
+An embedded map showing the location
+
+Design must be clean, mature, and museum-style.
+
+5. Resources Download Section
+
+All text and headings in Gurmukhi Punjabi
+
+Provide downloadable PDFs:
+
+Biography
+
+Teachings
+
+Gurudwara Sahib history
+
+Shabad meanings
+
+Timeline
+
+Each resource card should include:
+
+Gurmukhi title
+
+Short Gurmukhi description
+
+A button labeled “PDF ਡਾਊਨਲੋਡ ਕਰੋ”
+
+Overall Requirements
+
+Entire website in Gurmukhi Punjabi, but numbers remain normal (123…)
+
+Warm, spiritual, heritage-inspired color theme
+
+Mature typography for Punjabi text
+
+Smooth, modern navigation
+
+Fully responsive
+
+No childish fonts, icons, or animations
+
+Clean, premium, respectful presentation

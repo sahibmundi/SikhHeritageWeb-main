@@ -1,0 +1,106 @@
+[
+  {
+    "id": "gauri",
+    "name": "ਰਾਗੁ ਗਉੜੀ",
+    "title": "ਰਾਗੁ ਗਉੜੀ ਮਹਲਾ ੯",
+    "order": 1,
+    "marker": "ਰਾਗੁ ਗਉੜੀ ਮਹਲਾ ੯",
+    "shabadCount": 7
+  },
+  {
+    "id": "asa",
+    "name": "ਰਾਗੁ ਆਸਾ",
+    "title": "ਰਾਗੁ ਆਸਾ ਮਹਲਾ ੯",
+    "order": 2,
+    "marker": "ਰਾਗੁ ਆਸਾ ਮਹਲਾ ੯",
+    "shabadCount": 1
+  },
+  {
+    "id": "devgandhari",
+    "name": "ਰਾਗੁ ਦੇਵਗੰਧਾਰੀ",
+    "title": "ਰਾਗੁ ਦੇਵਗੰਧਾਰੀ ਮਹਲਾ ੯",
+    "order": 3,
+    "marker": "ਰਾਗੁ ਦੇਵਗੰਧਾਰੀ ਮਹਲਾ ੯",
+    "shabadCount": 2
+  },
+  {
+    "id": "bihagara",
+    "name": "ਰਾਗੁ ਬਿਹਾਗੜਾ",
+    "title": "ਰਾਗੁ ਬਿਹਾਗੜਾ ਮਹਲਾ ੯",
+    "order": 4,
+    "marker": "ਰਾਗੁ ਬਿਹਾਗੜਾ ਮਹਲਾ ੯",
+    "shabadCount": 2
+  },
+  {
+    "id": "sorath",
+    "name": "ਸੋਰਠਿ",
+    "title": "ਸੋਰਠਿ ਮਹਲਾ ੯",
+    "order": 5,
+    "marker": "ਸੋਰਠਿ ਮਹਲਾ ੯",
+    "shabadCount": 12
+  },
+  {
+    "id": "dhanasari",
+    "name": "ਧਨਾਸਰੀ",
+    "title": "ਧਨਾਸਰੀ ਮਹਲਾ ੯",
+    "order": 6,
+    "marker": "ਧਨਾਸਰੀ ਮਹਲਾ ੯",
+    "shabadCount": 6
+  },
+  {
+    "id": "tilang",
+    "name": "ਤਿਲੰਗ",
+    "title": "ਤਿਲੰਗ ਮਹਲਾ ੯",
+    "order": 7,
+    "marker": "ਤਿਲੰਗ ਮਹਲਾ ੯",
+    "shabadCount": 1
+  },
+  {
+    "id": "bilaval",
+    "name": "ਰਾਗੁ ਬਿਲਾਵਲੁ",
+    "title": "ਰਾਗੁ ਬਿਲਾਵਲੁ ਮਹਲਾ ੯",
+    "order": 8,
+    "marker": "ਰਾਗੁ ਬਿਲਾਵਲੁ ਮਹਲਾ ੯",
+    "shabadCount": 4
+  },
+  {
+    "id": "ramkali",
+    "name": "ਰਾਗੁ ਰਾਮਕਲੀ",
+    "title": "ਰਾਗੁ ਰਾਮਕਲੀ ਮਹਲਾ ੯",
+    "order": 9,
+    "marker": "ਰਾਗੁ ਰਾਮਕਲੀ ਮਹਲਾ ੯",
+    "shabadCount": 4
+  },
+  {
+    "id": "maru",
+    "name": "ਮਾਰੂ",
+    "title": "ਮਾਰੂ ਮਹਲਾ ੯",
+    "order": 10,
+    "marker": "ਮਾਰੂ ਮਹਲਾ ੯",
+    "shabadCount": 3
+  },
+  {
+    "id": "basant",
+    "name": "ਰਾਗੁ ਬਸੰਤੁ",
+    "title": "ਰਾਗੁ ਬਸੰਤੁ ਮਹਲਾ ੯",
+    "order": 11,
+    "marker": "ਬਸੰਤੁ ਹਿੰਡੋਲ ਮਹਲਾ ੯",
+    "shabadCount": 6
+  },
+  {
+    "id": "sarang",
+    "name": "ਰਾਗੁ ਸਾਰੰਗ",
+    "title": "ਰਾਗੁ ਸਾਰੰਗ ਮਹਲਾ ੯",
+    "order": 12,
+    "marker": "ਰਾਗੁ ਸਾਰੰਗ ਮਹਲਾ ੯",
+    "shabadCount": 5
+  },
+  {
+    "id": "jaijawanti",
+    "name": "ਰਾਗੁ ਜੈਜਾਵੰਤੀ",
+    "title": "ਰਾਗੁ ਜੈਜਾਵੰਤੀ ਮਹਲਾ ੯",
+    "order": 13,
+    "marker": "ਰਾਗੁ ਜੈਜਾਵੰਤੀ ਮਹਲਾ ੯",
+    "shabadCount": 20
+  }
+]
