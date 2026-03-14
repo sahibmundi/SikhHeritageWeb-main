@@ -17,9 +17,11 @@ let baaniShabads: BaaniShabad[] = [];
 
 function loadBaaniShabads(): BaaniShabad[] {
   try {
-    const jsonPath = join(__dirname, 'data', 'baani-shabads.json');
+    const jsonPath = join(process.cwd(), 'server', 'data', 'baani-shabads.json');
+
     const data = readFileSync(jsonPath, 'utf-8');
     const shabads = JSON.parse(data) as BaaniShabad[];
+
     console.log(`Loaded ${shabads.length} Baani shabads`);
     return shabads;
   } catch (error) {
