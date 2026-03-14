@@ -42,7 +42,7 @@ const __dirname = path.dirname(__filename);
 
 function loadGurdwaraData(): Gurdwara[] {
   try {
-    const dataPath = path.join(__dirname, "gurdwara-data.json");
+    const dataPath = path.join(process.cwd(), "server", "gurdwara-data.json");
     const rawData = fs.readFileSync(dataPath, "utf-8");
     const gurdwaras = JSON.parse(rawData) as Array<{
       id: string;
