@@ -32,7 +32,7 @@ export function Footer() {
                 ਜੀਵਨੀ
               </button>
               <button
-                onClick={() => scrollToSection("shabads")}
+                onClick={() => scrollToSection("baani")}
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md text-left"
                 data-testid="link-footer-shabads"
               >
@@ -45,13 +45,13 @@ export function Footer() {
               >
                 ਬਾਣੀ ਆਡੀਓ
               </button>
-              <button
+              {/* <button
                 onClick={() => scrollToSection("raags")}
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md text-left"
                 data-testid="link-footer-raags"
               >
                 ਰਾਗ
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollToSection("gurdwaras")}
                 className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md text-left"
