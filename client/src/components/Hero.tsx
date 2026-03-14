@@ -93,7 +93,7 @@ export function Hero() {
               />
             </motion.button>
             <motion.button
-              onClick={() => document.getElementById("shabads")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => document.getElementById("audio")?.scrollIntoView({ behavior: "smooth" })}
               className="px-8 py-4 bg-card border-2 border-card-border text-card-foreground font-semibold rounded-md shadow-3d-hover glow-border backdrop-blur-sm transition-all hover:border-primary"
               data-testid="button-explore-shabads"
               whileHover={{ scale: 1.05, y: -5 }}

@@ -67,7 +67,7 @@ export function BaaniViewer() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
         >
           <h2 
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4" 
@@ -93,9 +93,9 @@ export function BaaniViewer() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
               >
-                <Card className="shadow-lg bg-card/80 backdrop-blur-sm overflow-hidden">
+                <Card className="shadow-lg bg-card overflow-hidden">
                   <div className="p-4 md:p-6 border-b border-border/50">
                     <div className="flex items-center justify-between gap-4 flex-wrap">
                       <h3 
