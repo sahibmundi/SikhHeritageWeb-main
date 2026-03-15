@@ -1,52 +1,123 @@
-import { useQuery } from "@tanstack/react-query";
+import { Link } from "wouter";
+import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Biography } from "@/components/Biography";
-import { BaaniViewer } from "@/components/BaaniViewer";
-import { AudioSection } from "@/components/AudioSection";
-import { Gurdwaras } from "@/components/Gurdwaras";
-import { Resources } from "@/components/Resources";
 import { Footer } from "@/components/Footer";
-import type { TimelineEvent, BiographySection, Gurdwara, Resource } from "@shared/schema";
+import { BookOpen, Music, Building2, Download, ArrowRight } from "lucide-react";
+
+const sections = [
+  {
+    href: "/jeevni",
+    icon: BookOpen,
+    title: "ਜੀਵਨੀ",
+    subtitle: "Biography",
+    description: "ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਜੀਵਨ, ਸੰਘਰਸ਼, ਅਤੇ ਸ਼ਹੀਦੀ ਦਾ ਇਤਿਹਾਸ।",
+    testId: "card-nav-jeevni",
+  },
+  {
+    href: "/baani",
+    icon: Music,
+    title: "ਬਾਣੀ",
+    subtitle: "Sacred Hymns",
+    description: "15 ਰਾਗਾਂ ਵਿੱਚ ਗੁਰੂ ਜੀ ਦੀ ਪਾਵਨ ਬਾਣੀ, ਅਰਥ ਅਤੇ ਵਿਆਖਿਆ ਸਹਿਤ।",
+    testId: "card-nav-baani",
+  },
+  {
+    href: "/gurdwara-sahib",
+    icon: Building2,
+    title: "ਗੁਰਦੁਆਰਾ ਸਾਹਿਬ",
+    subtitle: "Historic Shrines",
+    description: "ਗੁਰੂ ਜੀ ਨਾਲ ਜੁੜੇ 44 ਇਤਿਹਾਸਕ ਗੁਰਦੁਆਰਿਆਂ ਦਾ ਵੇਰਵਾ।",
+    testId: "card-nav-gurdwaras",
+  },
+  {
+    href: "/srot",
+    icon: Download,
+    title: "ਸਰੋਤ",
+    subtitle: "Resources & Downloads",
+    description: "ਜੀਵਨੀ, ਬਾਣੀ, ਅਤੇ ਇਤਿਹਾਸ ਦੇ PDF ਦਸਤਾਵੇਜ਼ ਡਾਊਨਲੋਡ ਕਰੋ।",
+    testId: "card-nav-srot",
+  },
+];
 
 export default function Home() {
-  const { data: timeline = [], isLoading: timelineLoading } = useQuery<TimelineEvent[]>({
-    queryKey: ["/api/biography/timeline"]
-  });
-
-  const { data: biographySections = [], isLoading: biographyLoading } = useQuery<BiographySection[]>({
-    queryKey: ["/api/biography/sections"]
-  });
-
-  const { data: gurdwaras = [], isLoading: gurdwarasLoading } = useQuery<Gurdwara[]>({
-    queryKey: ["/api/gurdwaras"]
-  });
-
-  const { data: resources = [], isLoading: resourcesLoading } = useQuery<Resource[]>({
-    queryKey: ["/api/resources"]
-  });
-
-  // Show loading state while fetching data
-  if (timelineLoading || biographyLoading || gurdwarasLoading || resourcesLoading) {
-    return (
-      <div className="min-h-screen bg-background text-foreground flex items-center justify-center" data-testid="page-loading">
-        <div className="text-center space-y-4">
-          <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto" data-testid="spinner"></div>
-          <p className="text-xl text-muted-foreground">ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...</p>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-background text-foreground" data-testid="page-home">
       <Header />
       <Hero />
-      <Biography timeline={timeline} sections={biographySections} />
-      <BaaniViewer />
-      <AudioSection />
-      <Gurdwaras gurdwaras={gurdwaras} />
-      <Resources resources={resources} />
+
+      <section className="py-16 md:py-24 bg-accent/10" data-testid="section-nav-cards">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3" data-testid="text-explore-title">
+              ਵਿਸ਼ੇ ਖੋਜੋ
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              ਹੇਠਾਂ ਦਿੱਤੇ ਭਾਗਾਂ ਵਿੱਚੋਂ ਆਪਣੀ ਪਸੰਦ ਅਨੁਸਾਰ ਜਾਣਕਾਰੀ ਹਾਸਲ ਕਰੋ
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {sections.map((section, index) => {
+              const Icon = section.icon;
+              return (
+                <motion.div
+                  key={section.href}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <Link href={section.href}>
+                    <motion.div
+                      className="group relative bg-card border border-card-border rounded-2xl p-6 cursor-pointer h-full flex flex-col gap-4 shadow-3d-hover glow-border overflow-hidden"
+                      whileHover={{ y: -6, scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      transition={{ duration: 0.25 }}
+                      data-testid={section.testId}
+                    >
+                      <motion.div
+                        className="absolute inset-0 bg-primary/5 rounded-2xl"
+                        initial={{ opacity: 0 }}
+                        whileHover={{ opacity: 1 }}
+                        transition={{ duration: 0.3 }}
+                      />
+
+                      <div className="relative z-10 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <Icon className="w-6 h-6 text-primary" />
+                      </div>
+
+                      <div className="relative z-10 flex-1">
+                        <h3 className="text-xl font-bold text-card-foreground mb-0.5" data-testid={`text-section-title-${index}`}>
+                          {section.title}
+                        </h3>
+                        <p className="text-xs font-medium text-orange-500 mb-2 uppercase tracking-wide">
+                          {section.subtitle}
+                        </p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {section.description}
+                        </p>
+                      </div>
+
+                      <div className="relative z-10 flex items-center gap-1 text-primary text-sm font-medium group-hover:gap-2 transition-all">
+                        <span>ਖੋਲ੍ਹੋ</span>
+                        <ArrowRight className="w-4 h-4" />
+                      </div>
+                    </motion.div>
+                  </Link>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

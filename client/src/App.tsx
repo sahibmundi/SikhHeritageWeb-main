@@ -4,14 +4,20 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
-import Raags from "@/pages/Raags";
+import BiographyPage from "@/pages/BiographyPage";
+import BaaniPage from "@/pages/BaaniPage";
+import GurdwarasPage from "@/pages/GurdwarasPage";
+import SrotPage from "@/pages/SrotPage";
 import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/raags" component={Raags} />
+      <Route path="/jeevni" component={BiographyPage} />
+      <Route path="/baani" component={BaaniPage} />
+      <Route path="/gurdwara-sahib" component={GurdwarasPage} />
+      <Route path="/srot" component={SrotPage} />
       <Route component={NotFound} />
     </Switch>
   );
