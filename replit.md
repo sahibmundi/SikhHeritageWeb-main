@@ -3,8 +3,8 @@
 This is a heritage website dedicated to Guru Tegh Bahadur Ji, the ninth Sikh Guru. The website presents a comprehensive digital museum experience featuring:
 
 - **Biography & Timeline**: Detailed life history with chronological events from 1621-1675
-- **Shabads & Raags**: Sacred hymns (Bani) organized by 15 classical Indian ragas, including Gurmukhi text, meanings, and Prof. Sahib Singh Ji's commentary
-- **Historic Gurdwaras**: Information about Gurdwaras associated with Guru Tegh Bahadur Ji's journey
+- **Shabads & Raags**: Sacred hymns (Bani) organized by 15 classical Indian ragas (Maaru, Saarang, Devgandhari, Aasa, Tilang, Todi, Gauri, Ramkali, Dhanasri, Bihagda, Bilawal, Jaijawanti, Sorath, Basant, Jaisari), including Gurmukhi text and Punjabi vyakhya
+- **Historic Gurdwaras**: 44 Gurdwaras associated with Guru Tegh Bahadur Ji — displayed in a 4-column name-only card grid; clicking any card opens a full-screen modal with the complete historical content
 - **Educational Resources**: Downloadable materials including PDFs and reference documents
 
 All content is presented in Gurmukhi Punjabi script while maintaining standard numerals (e.g., 1621, 1675) for dates. The design follows a museum-quality, spiritually reverent aesthetic inspired by premium heritage platforms like the Smithsonian and British Museum online collections.
