@@ -1,11 +1,6 @@
-export function Footer() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+import { Link } from "wouter";
 
+export function Footer() {
   return (
     <footer className="bg-card border-t border-card-border" data-testid="footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -24,48 +19,38 @@ export function Footer() {
               ਤੇਜ਼ ਲਿੰਕ
             </h4>
             <nav className="space-y-2">
-              <button
-                onClick={() => scrollToSection("biography")}
-                className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md text-left"
-                data-testid="link-footer-biography"
-              >
-                ਜੀਵਨੀ
-              </button>
-              <button
-                onClick={() => scrollToSection("baani")}
-                className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md text-left"
-                data-testid="link-footer-shabads"
-              >
-                ਬਾਣੀ
-              </button>
-              <button
-                onClick={() => scrollToSection("audio")}
-                className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md text-left"
-                data-testid="link-footer-audio"
-              >
-                ਬਾਣੀ ਆਡੀਓ
-              </button>
-              {/* <button
-                onClick={() => scrollToSection("raags")}
-                className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md text-left"
-                data-testid="link-footer-raags"
-              >
-                ਰਾਗ
-              </button> */}
-              <button
-                onClick={() => scrollToSection("gurdwaras")}
-                className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md text-left"
-                data-testid="link-footer-gurdwaras"
-              >
-                ਗੁਰਦੁਆਰਾ ਸਾਹਿਬ
-              </button>
-              <button
-                onClick={() => scrollToSection("resources")}
-                className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md text-left"
-                data-testid="link-footer-resources"
-              >
-                ਸਰੋਤ
-              </button>
+              <Link href="/jeevni">
+                <span
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md cursor-pointer"
+                  data-testid="link-footer-jeevni"
+                >
+                  ਜੀਵਨੀ
+                </span>
+              </Link>
+              <Link href="/baani">
+                <span
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md cursor-pointer"
+                  data-testid="link-footer-baani"
+                >
+                  ਬਾਣੀ
+                </span>
+              </Link>
+              <Link href="/gurdwara-sahib">
+                <span
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md cursor-pointer"
+                  data-testid="link-footer-gurdwaras"
+                >
+                  ਗੁਰਦੁਆਰਾ ਸਾਹਿਬ
+                </span>
+              </Link>
+              <Link href="/srot">
+                <span
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors hover-elevate px-2 py-1 rounded-md cursor-pointer"
+                  data-testid="link-footer-srot"
+                >
+                  ਸਰੋਤ
+                </span>
+              </Link>
             </nav>
           </div>
 
