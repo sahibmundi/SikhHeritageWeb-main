@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import { Header } from "@/components/Header";
 import { Biography } from "@/components/Biography";
 import { Footer } from "@/components/Footer";
 import type { TimelineEvent, BiographySection } from "@shared/schema";
@@ -15,7 +14,6 @@ export default function BiographyPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground" data-testid="page-biography">
-      <Header />
       <div className="pt-16 md:pt-20">
         {timelineLoading || biographyLoading ? (
           <div className="flex items-center justify-center py-32">

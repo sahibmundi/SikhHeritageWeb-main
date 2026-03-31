@@ -79,7 +79,7 @@ export function Hero() {
                 ਜੀਵਨੀ ਪੜ੍ਹੋ
               </motion.div>
             </Link>
-            <Link href="/baani">
+            <Link href="/baani-audio">
               <motion.div
                 className="px-8 py-3 bg-card border-2 border-card-border text-card-foreground font-semibold rounded-md shadow-3d-hover cursor-pointer hover:border-primary transition-colors"
                 data-testid="button-explore-shabads"

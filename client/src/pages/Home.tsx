@@ -1,9 +1,8 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Footer } from "@/components/Footer";
-import { BookOpen, Music, Building2, Download, ArrowRight } from "lucide-react";
+import { BookOpen, Music, Building2, ArrowRight } from "lucide-react";
 
 const sections = [
   {
@@ -30,20 +29,11 @@ const sections = [
     description: "ਗੁਰੂ ਜੀ ਨਾਲ ਜੁੜੇ 44 ਇਤਿਹਾਸਕ ਗੁਰਦੁਆਰਿਆਂ ਦਾ ਵੇਰਵਾ।",
     testId: "card-nav-gurdwaras",
   },
-  {
-    href: "/srot",
-    icon: Download,
-    title: "ਸਰੋਤ",
-    subtitle: "Resources & Downloads",
-    description: "ਜੀਵਨੀ, ਬਾਣੀ, ਅਤੇ ਇਤਿਹਾਸ ਦੇ PDF ਦਸਤਾਵੇਜ਼ ਡਾਊਨਲੋਡ ਕਰੋ।",
-    testId: "card-nav-srot",
-  },
 ];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground" data-testid="page-home">
-      <Header />
       <Hero />
 
       <section className="py-8 md:py-12 bg-accent/10" data-testid="section-nav-cards">
@@ -63,7 +53,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {sections.map((section, index) => {
               const Icon = section.icon;
               return (
@@ -76,7 +66,7 @@ export default function Home() {
                 >
                   <Link href={section.href}>
                     <motion.div
-                      className="group relative bg-card border border-card-border rounded-2xl p-6 cursor-pointer h-full flex flex-col gap-4 shadow-3d-hover glow-border overflow-hidden"
+                      className="group relative bg-card border border-card-border rounded-2xl p-6 cursor-pointer h-full flex flex-col gap-4 shadow-3d-hover overflow-hidden"
                       whileHover={{ y: -6, scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       transition={{ duration: 0.25 }}
@@ -88,13 +78,11 @@ export default function Home() {
                         whileHover={{ opacity: 1 }}
                         transition={{ duration: 0.3 }}
                       />
-
                       <div className="relative z-10 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                         <Icon className="w-6 h-6 text-primary" />
                       </div>
-
                       <div className="relative z-10 flex-1">
-                        <h3 className="text-xl font-bold text-card-foreground mb-0.5" data-testid={`text-section-title-${index}`}>
+                        <h3 className="text-xl font-bold text-card-foreground mb-0.5">
                           {section.title}
                         </h3>
                         <p className="text-xs font-medium text-orange-500 mb-2 uppercase tracking-wide">
@@ -104,7 +92,6 @@ export default function Home() {
                           {section.description}
                         </p>
                       </div>
-
                       <div className="relative z-10 flex items-center gap-1 text-primary text-sm font-medium group-hover:gap-2 transition-all">
                         <span>ਖੋਲ੍ਹੋ</span>
                         <ArrowRight className="w-4 h-4" />

@@ -8,7 +8,6 @@ const navLinks = [
   { href: "/jeevni", label: "ਜੀਵਨੀ", testId: "link-jeevni" },
   { href: "/baani", label: "ਬਾਣੀ", testId: "link-baani" },
   { href: "/gurdwara-sahib", label: "ਗੁਰਦੁਆਰਾ ਸਾਹਿਬ", testId: "link-gurdwaras" },
-  { href: "/srot", label: "ਸਰੋਤ", testId: "link-srot" },
 ];
 
 export function Header() {
