@@ -18,11 +18,6 @@ export function Footer() {
           {/* Brand */}
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer group" data-testid="link-footer-home">
-              <div className="w-7 h-7 rounded-full bg-sidebar-accent flex items-center justify-center border border-sidebar-border">
-                <svg viewBox="0 0 100 100" className="w-4 h-4 fill-sidebar-foreground" xmlns="http://www.w3.org/2000/svg">
-                  <text x="50" y="50" textAnchor="middle" dominantBaseline="central" fontSize="50" fontWeight="bold" fontFamily="Arial, sans-serif">ੴ</text>
-                </svg>
-              </div>
               <span className="text-sm font-semibold text-sidebar-foreground group-hover:text-sidebar-accent-foreground transition-colors whitespace-nowrap">
                 ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ
               </span>
