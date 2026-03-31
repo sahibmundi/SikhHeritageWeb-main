@@ -1,5 +1,4 @@
 import { useQuery } from "@tanstack/react-query";
-import { Header } from "@/components/Header";
 import { Gurdwaras } from "@/components/Gurdwaras";
 import { Footer } from "@/components/Footer";
 import type { Gurdwara } from "@shared/schema";
@@ -11,7 +10,6 @@ export default function GurdwarasPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground" data-testid="page-gurdwaras">
-      <Header />
       <div className="pt-16 md:pt-20">
         {isLoading ? (
           <div className="flex items-center justify-center py-32">

@@ -4,7 +4,6 @@ const navLinks = [
   { href: "/jeevni", label: "ਜੀਵਨੀ", testId: "link-footer-jeevni" },
   { href: "/baani", label: "ਬਾਣੀ", testId: "link-footer-baani" },
   { href: "/gurdwara-sahib", label: "ਗੁਰਦੁਆਰਾ ਸਾਹਿਬ", testId: "link-footer-gurdwaras" },
-  { href: "/srot", label: "ਸਰੋਤ", testId: "link-footer-srot" },
 ];
 
 export function Footer() {
