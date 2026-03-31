@@ -65,8 +65,8 @@ export function Header() {
             >
               <motion.div
                 className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden border-2 border-sidebar-foreground shadow-lg glow-border bg-sidebar-accent flex items-center justify-center"
-                whileHover={{ rotate: 360, borderColor: "#f97316" }}
-                transition={{ duration: 0.6 }}
+                whileHover={{ borderColor: "#f97316" }}
+                transition={{ duration: 0.3 }}
               >
                 <svg
                   viewBox="0 0 100 100"
