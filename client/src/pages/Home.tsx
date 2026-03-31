@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
 import { Footer } from "@/components/Footer";
-import { BookOpen, Music, Building2, ArrowRight } from "lucide-react";
+import { BookOpen, Music, Headphones, Building2, ArrowRight } from "lucide-react";
 
 const sections = [
   {
@@ -17,9 +17,17 @@ const sections = [
     href: "/baani",
     icon: Music,
     title: "ਬਾਣੀ",
-    subtitle: "Sacred Hymns",
+    subtitle: "Sacred Hymns — Text",
     description: "15 ਰਾਗਾਂ ਵਿੱਚ ਗੁਰੂ ਜੀ ਦੀ ਪਾਵਨ ਬਾਣੀ, ਅਰਥ ਅਤੇ ਵਿਆਖਿਆ ਸਹਿਤ।",
     testId: "card-nav-baani",
+  },
+  {
+    href: "/baani-audio",
+    icon: Headphones,
+    title: "ਬਾਣੀ ਆਡੀਓ",
+    subtitle: "Sacred Hymns — Audio",
+    description: "ਗੁਰੂ ਜੀ ਦੀਆਂ ਬਾਣੀਆਂ ਦਾ ਕੀਰਤਨ — ਉੱਚ ਪੱਧਰੀ ਰਾਗੀਆਂ ਦੀ ਆਵਾਜ਼ ਵਿੱਚ।",
+    testId: "card-nav-baani-audio",
   },
   {
     href: "/gurdwara-sahib",
@@ -53,7 +61,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {sections.map((section, index) => {
               const Icon = section.icon;
               return (
