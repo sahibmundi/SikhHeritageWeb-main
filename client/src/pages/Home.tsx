@@ -46,10 +46,10 @@ export default function Home() {
       <Header />
       <Hero />
 
-      <section className="py-16 md:py-24 bg-accent/10" data-testid="section-nav-cards">
+      <section className="py-8 md:py-12 bg-accent/10" data-testid="section-nav-cards">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            className="text-center mb-12"
+            className="text-center mb-8"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
