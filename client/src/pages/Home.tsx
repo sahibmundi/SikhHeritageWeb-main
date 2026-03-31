@@ -16,9 +16,9 @@ const sections = [
   {
     href: "/baani",
     icon: Music,
-    title: "ਬਾਣੀ",
-    subtitle: "Sacred Hymns — Text",
-    description: "15 ਰਾਗਾਂ ਵਿੱਚ ਗੁਰੂ ਜੀ ਦੀ ਪਾਵਨ ਬਾਣੀ, ਅਰਥ ਅਤੇ ਵਿਆਖਿਆ ਸਹਿਤ।",
+    title: "ਰਾਗਾਂ ਵਿੱਚ ਬਾਣੀ",
+    subtitle: "Raag vich Baani",
+    description: "ਗੁਰੂ ਜੀ ਦੀ ਪਾਵਨ ਬਾਣੀ ਰਾਗਾਂ ਅਨੁਸਾਰ — ਸ਼ਬਦ ਅਰਥ ਅਤੇ ਵਿਆਖਿਆ ਸਮੇਤ ਪੜ੍ਹੋ।",
     testId: "card-nav-baani",
   },
   {
