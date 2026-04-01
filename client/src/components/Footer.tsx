@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import logoImg from "@assets/image_1775041028126.png";
 
 const navLinks = [
   { href: "/jeevni", label: "ਜੀਵਨੀ", testId: "link-footer-jeevni" },
@@ -11,13 +12,18 @@ const navLinks = [
 export function Footer() {
   return (
     <footer className="bg-sidebar border-t border-sidebar-border" data-testid="footer">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
 
         <div className="grid grid-cols-2 sm:grid-cols-[auto_1fr_auto] items-center gap-x-6 gap-y-2">
 
           <Link href="/">
-            <div className="cursor-pointer group" data-testid="link-footer-home">
-              <span className="text-sm font-semibold text-sidebar-foreground group-hover:text-sidebar-accent-foreground transition-colors whitespace-nowrap">
+            <div className="cursor-pointer group flex flex-col items-center gap-1" data-testid="link-footer-home">
+              <img
+                src={logoImg}
+                alt="ਲੋਗੋ"
+                className="w-16 h-16 rounded-full object-cover border-2 border-orange-400 group-hover:border-orange-500 transition-colors"
+              />
+              <span className="text-xs font-semibold text-sidebar-foreground group-hover:text-sidebar-accent-foreground transition-colors whitespace-nowrap">
                 ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ
               </span>
             </div>
