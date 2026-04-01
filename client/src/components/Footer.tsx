@@ -1,6 +1,5 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import logoImg from "@assets/image_1775041028126.png";
 
 const navLinks = [
   { href: "/jeevni", label: "ਜੀਵਨੀ", testId: "link-footer-jeevni" },
@@ -17,12 +16,7 @@ export function Footer() {
         <div className="grid grid-cols-2 sm:grid-cols-[auto_1fr_auto] items-center gap-x-6 gap-y-2">
 
           <Link href="/">
-            <div className="cursor-pointer group flex items-center gap-2" data-testid="link-footer-home">
-              <img
-                src={logoImg}
-                alt="ਲੋਗੋ"
-                className="w-8 h-8 rounded-full object-cover border border-orange-400 group-hover:border-orange-500 transition-colors flex-shrink-0"
-              />
+            <div className="cursor-pointer group" data-testid="link-footer-home">
               <span className="text-sm font-semibold text-sidebar-foreground group-hover:text-sidebar-accent-foreground transition-colors whitespace-nowrap">
                 ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ
               </span>
