@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
 import { Footer } from "@/components/Footer";
-import { BookOpen, Headphones, Building2, ArrowRight, Sparkles } from "lucide-react";
+import { BookOpen, Building2, ArrowRight, Sparkles } from "lucide-react";
 
 const sections = [
   {
@@ -27,13 +27,14 @@ const sections = [
   },
   {
     href: "/baani-audio",
-    icon: Headphones,
+    icon: null,
+    ikonkar: true,
     title: "ਗੁਰਬਾਣੀ ਕੀਰਤਨ",
     description: "ਗੁਰੂ ਜੀ ਦੀ ਪਵਿੱਤਰ ਬਾਣੀ ਦਾ ਕੀਰਤਨ ਅਤੇ ਰੂਹਾਨੀ ਸ਼ਾਂਤੀ ਦਾ ਅਨੁਭਵ।",
     testId: "card-nav-baani-audio",
     accentColor: "from-purple-500/10 to-primary/10",
     iconBg: "bg-purple-500/10 group-hover:bg-purple-500/20",
-    iconColor: "text-purple-500",
+    iconColor: "text-purple-600",
   },
   {
     href: "/gurdwara-sahib",
@@ -107,7 +108,11 @@ export default function Home() {
                       />
 
                       <div className={`relative z-10 w-12 h-12 rounded-xl ${section.iconBg} flex items-center justify-center transition-colors`}>
-                        <Icon className={`w-6 h-6 ${section.iconColor}`} />
+                        {section.ikonkar ? (
+                          <span className={`text-2xl font-bold leading-none select-none ${section.iconColor}`}>ੴ</span>
+                        ) : Icon ? (
+                          <Icon className={`w-6 h-6 ${section.iconColor}`} />
+                        ) : null}
                       </div>
 
                       <div className="relative z-10 flex-1">
