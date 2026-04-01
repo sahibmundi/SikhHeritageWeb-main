@@ -63,17 +63,6 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <motion.div
-              className="flex justify-center items-center gap-3 mb-3"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/50" />
-              <span className="text-primary text-sm font-medium tracking-widest uppercase">ਗੁਰਮਤਿ</span>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/50" />
-            </motion.div>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3" data-testid="text-explore-title">
               ਗੁਰਮਤਿ ਵਿਚਾਰ
             </h2>

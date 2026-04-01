@@ -58,13 +58,13 @@ export function Hero() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.05, type: "spring", stiffness: 100 }}
           >
-            <motion.div
-              className="text-4xl sm:text-5xl text-primary select-none"
-              animate={{ rotate: [0, 5, -5, 0] }}
-              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            >
-              ੴ
-            </motion.div>
+            <div className="relative inline-flex items-center justify-center">
+              <motion.div className="absolute w-1.5 h-1.5 rounded-full bg-orange-400" style={{ top: "-10px", left: "50%" }} animate={{ opacity: [0.2, 1, 0.2], scale: [0.6, 1.2, 0.6] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0 }} />
+              <motion.div className="absolute w-1.5 h-1.5 rounded-full bg-orange-400" style={{ top: "10px", right: "-14px" }} animate={{ opacity: [0.2, 1, 0.2], scale: [0.6, 1.2, 0.6] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.5 }} />
+              <motion.div className="absolute w-1.5 h-1.5 rounded-full bg-orange-400" style={{ bottom: "-8px", left: "50%" }} animate={{ opacity: [0.2, 1, 0.2], scale: [0.6, 1.2, 0.6] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 1 }} />
+              <motion.div className="absolute w-1.5 h-1.5 rounded-full bg-orange-400" style={{ top: "10px", left: "-14px" }} animate={{ opacity: [0.2, 1, 0.2], scale: [0.6, 1.2, 0.6] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 1.5 }} />
+              <span className="text-4xl sm:text-5xl text-primary select-none">ੴ</span>
+            </div>
           </motion.div>
 
           <motion.h1
