@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import type { AudioTrack, RaagInfo } from "@shared/schema";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { AudioPlayer } from "./AudioPlayer";
 import { Music2 } from "lucide-react";
@@ -10,7 +9,6 @@ import { motion } from "framer-motion";
 
 export function AudioSection() {
   const [currentlyPlaying, setCurrentlyPlaying] = useState<string | null>(null);
-  const [selectedRaag, setSelectedRaag] = useState<string>("all");
 
   const { data: audioTracks, isLoading: audioLoading } = useQuery<AudioTrack[]>({
     queryKey: ["/api/audio"],
@@ -19,10 +17,6 @@ export function AudioSection() {
   const { data: raags } = useQuery<RaagInfo[]>({
     queryKey: ["/api/raags"],
   });
-
-  const filteredTracks = audioTracks?.filter((track) => 
-    selectedRaag === "all" || track.raagId === selectedRaag
-  ) || [];
 
   const handlePlayPause = (trackId: string) => {
     setCurrentlyPlaying(prev => prev === trackId ? null : trackId);
@@ -65,26 +59,8 @@ export function AudioSection() {
           </p>
         </motion.div>
 
-        <div className="mb-8 flex justify-center">
-          <div className="w-full max-w-sm">
-            <Select value={selectedRaag} onValueChange={setSelectedRaag}>
-              <SelectTrigger data-testid="select-raag-filter">
-                <SelectValue placeholder="ਸਾਰੇ ਰਾਗ" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">ਸਾਰੇ ਰਾਗ</SelectItem>
-                {raags?.map((raag) => (
-                  <SelectItem key={raag.id} value={raag.id}>
-                    {raag.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {filteredTracks.map((track, index) => (
+          {(audioTracks || []).map((track, index) => (
             <motion.div
               key={track.id}
               initial={{ opacity: 0, y: 20 }}
@@ -130,9 +106,9 @@ export function AudioSection() {
           ))}
         </div>
 
-        {filteredTracks.length === 0 && (
+        {(audioTracks || []).length === 0 && !audioLoading && (
           <div className="text-center py-12">
-            <p className="text-muted-foreground">ਇਸ ਰਾਗ ਵਿੱਚ ਕੋਈ ਆਡੀਓ ਉਪਲੱਬਧ ਨਹੀਂ</p>
+            <p className="text-muted-foreground">ਕੋਈ ਆਡੀਓ ਉਪਲੱਬਧ ਨਹੀਂ</p>
           </div>
         )}
       </div>

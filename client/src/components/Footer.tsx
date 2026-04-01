@@ -13,23 +13,23 @@ export function Footer() {
     <footer className="bg-sidebar border-t border-sidebar-border" data-testid="footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-[auto_1fr_auto] items-center gap-x-6 gap-y-2">
 
           <Link href="/">
-            <div className="flex items-center gap-2 cursor-pointer group" data-testid="link-footer-home">
+            <div className="cursor-pointer group" data-testid="link-footer-home">
               <span className="text-sm font-semibold text-sidebar-foreground group-hover:text-sidebar-accent-foreground transition-colors whitespace-nowrap">
                 ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ
               </span>
             </div>
           </Link>
 
-          <nav className="flex items-center gap-0.5 flex-wrap justify-center">
+          <nav className="flex items-center justify-center gap-x-1 flex-wrap col-span-2 sm:col-span-1">
             {navLinks.map((link, i) => (
               <span key={link.href} className="flex items-center">
-                {i > 0 && <span className="text-sidebar-border text-xs mx-1 select-none">·</span>}
+                {i > 0 && <span className="text-sidebar-border/60 text-xs mx-1 select-none">·</span>}
                 <Link href={link.href}>
                   <motion.span
-                    className="text-xs text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors cursor-pointer px-1 py-0.5 rounded"
+                    className="text-xs text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors cursor-pointer px-1 py-0.5"
                     data-testid={link.testId}
                     whileHover={{ y: -1 }}
                   >
@@ -40,14 +40,15 @@ export function Footer() {
             ))}
           </nav>
 
-          <p className="text-xs text-sidebar-foreground/50 whitespace-nowrap" data-testid="text-footer-copyright">
-            © {new Date().getFullYear()} ਵਿਰਾਸਤ
-          </p>
+          <span className="text-xs text-sidebar-foreground/40 whitespace-nowrap text-right hidden sm:block">
+            ਜਨਮ 1621 · ਸ਼ਹੀਦੀ 1675
+          </span>
         </div>
 
-        <div className="mt-3 pt-3 border-t border-sidebar-border/30 flex flex-col sm:flex-row items-center justify-between gap-1 text-xs text-sidebar-foreground/40">
-          <span className="italic">"ਭੈ ਕਾਹੂ ਕਉ ਦੇਤ ਨਹਿ ਨਹਿ ਭੈ ਮਾਨਤ ਆਨ।।"</span>
-          <span>ਜਨਮ 1621 · ਗੁਰਗੱਦੀ 1664 · ਸ਼ਹੀਦੀ 1675</span>
+        <div className="mt-3 pt-3 border-t border-sidebar-border/30 text-center">
+          <span className="text-xs text-sidebar-foreground/40 italic">
+            "ਭੈ ਕਾਹੂ ਕਉ ਦੇਤ ਨਹਿ ਨਹਿ ਭੈ ਮਾਨਤ ਆਨ।।"
+          </span>
         </div>
 
       </div>
