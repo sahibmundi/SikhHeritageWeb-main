@@ -63,9 +63,13 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3" data-testid="text-explore-title">
-              ਗੁਰਮਤਿ ਵਿਚਾਰ
-            </h2>
+            <div className="flex items-center justify-center gap-4 mb-3">
+              <div className="h-px flex-1 max-w-[80px] bg-gradient-to-r from-transparent to-primary/50" />
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground" data-testid="text-explore-title">
+                ਗੁਰਮਤਿ ਵਿਚਾਰ
+              </h2>
+              <div className="h-px flex-1 max-w-[80px] bg-gradient-to-l from-transparent to-primary/50" />
+            </div>
             <p className="text-lg text-muted-foreground">
               ਗੁਰਬਾਣੀ ਅਤੇ ਆਤਮਕ ਗਿਆਨ
             </p>

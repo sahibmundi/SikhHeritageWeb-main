@@ -1,20 +1,20 @@
 import { Link } from "wouter";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { href: "/jeevni", label: "ਜੀਵਨੀ", testId: "link-footer-jeevni" },
-  { href: "/baani", label: "ਬਾਣੀ", testId: "link-footer-baani" },
-  { href: "/gurdwara-sahib", label: "ਗੁਰਦੁਆਰਾ ਸਾਹਿਬ", testId: "link-footer-gurdwaras" },
+  { href: "/baani", label: "ਬਾਣੀ ਅੰਮ੍ਰਿਤ", testId: "link-footer-baani" },
+  { href: "/baani-audio", label: "ਗੁਰਬਾਣੀ ਕੀਰਤਨ", testId: "link-footer-baani-audio" },
+  { href: "/gurdwara-sahib", label: "ਇਤਿਹਾਸਕ ਗੁਰਧਾਮ", testId: "link-footer-gurdwaras" },
 ];
 
 export function Footer() {
   return (
     <footer className="bg-sidebar border-t border-sidebar-border" data-testid="footer">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 
-        {/* Main row */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
 
-          {/* Brand */}
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer group" data-testid="link-footer-home">
               <span className="text-sm font-semibold text-sidebar-foreground group-hover:text-sidebar-accent-foreground transition-colors whitespace-nowrap">
@@ -23,32 +23,30 @@ export function Footer() {
             </div>
           </Link>
 
-          {/* Nav links */}
-          <nav className="flex items-center gap-1 flex-wrap justify-center">
+          <nav className="flex items-center gap-0.5 flex-wrap justify-center">
             {navLinks.map((link, i) => (
               <span key={link.href} className="flex items-center">
                 {i > 0 && <span className="text-sidebar-border text-xs mx-1 select-none">·</span>}
                 <Link href={link.href}>
-                  <span
-                    className="text-sm text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors cursor-pointer px-1 py-0.5 rounded"
+                  <motion.span
+                    className="text-xs text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors cursor-pointer px-1 py-0.5 rounded"
                     data-testid={link.testId}
+                    whileHover={{ y: -1 }}
                   >
                     {link.label}
-                  </span>
+                  </motion.span>
                 </Link>
               </span>
             ))}
           </nav>
 
-          {/* Copyright */}
           <p className="text-xs text-sidebar-foreground/50 whitespace-nowrap" data-testid="text-footer-copyright">
-            © {new Date().getFullYear()} ਵਿਰਾਸਤ ਵੈੱਬਸਾਈਟ
+            © {new Date().getFullYear()} ਵਿਰਾਸਤ
           </p>
         </div>
 
-        {/* Thin sub-line */}
-        <div className="mt-4 pt-4 border-t border-sidebar-border/40 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-sidebar-foreground/40">
-          <span className="italic">"ਕਾਹੂ ਕਉ ਦੇਤੁ ਨ ਡਰੈ, ਨਾਹੁ ਡਰਾਵੈ।"</span>
+        <div className="mt-3 pt-3 border-t border-sidebar-border/30 flex flex-col sm:flex-row items-center justify-between gap-1 text-xs text-sidebar-foreground/40">
+          <span className="italic">"ਭੈ ਕਾਹੂ ਕਉ ਦੇਤ ਨਹਿ ਨਹਿ ਭੈ ਮਾਨਤ ਆਨ।।"</span>
           <span>ਜਨਮ 1621 · ਗੁਰਗੱਦੀ 1664 · ਸ਼ਹੀਦੀ 1675</span>
         </div>
 
