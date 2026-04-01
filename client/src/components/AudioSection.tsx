@@ -57,11 +57,11 @@ export function AudioSection() {
           <div className="inline-flex items-center gap-2 mb-4">
             <Music2 className="h-8 w-8 text-primary" />
             <h2 className="text-4xl md:text-5xl font-mukta font-bold text-foreground">
-              ਬਾਣੀ ਆਡੀਓ
+              ਗੁਰਬਾਣੀ ਕੀਰਤਨ
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦੀਆਂ ਬਾਣੀਆਂ ਦਾ ਕੀਰਤਨ - ਉੱਚ ਪੱਧਰੀ ਰਾਗੀਆਂ ਦੀ ਆਵਾਜ਼ ਵਿੱਚ
+            ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦੀਆਂ ਬਾਣੀਆਂ ਦਾ ਕੀਰਤਨ 
           </p>
         </motion.div>
 

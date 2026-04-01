@@ -2,39 +2,39 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
 import { Footer } from "@/components/Footer";
-import { BookOpen, Music, Headphones, Building2, ArrowRight } from "lucide-react";
+import { BookOpen, Music, Headphones, Building2, ArrowRight, Library, BookA, Sparkle } from "lucide-react";
 
 const sections = [
   {
     href: "/jeevni",
     icon: BookOpen,
     title: "ਜੀਵਨੀ",
-    subtitle: "Biography",
+    
     description: "ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਜੀਵਨ, ਸੰਘਰਸ਼, ਅਤੇ ਸ਼ਹੀਦੀ ਦਾ ਇਤਿਹਾਸ।",
     testId: "card-nav-jeevni",
   },
   {
     href: "/baani",
-    icon: Music,
-    title: "ਰਾਗਾਂ ਵਿੱਚ ਬਾਣੀ",
-    subtitle: "Raag vich Baani",
-    description: "ਗੁਰੂ ਜੀ ਦੀ ਪਾਵਨ ਬਾਣੀ ਰਾਗਾਂ ਅਨੁਸਾਰ — ਸ਼ਬਦ ਅਰਥ ਅਤੇ ਵਿਆਖਿਆ ਸਮੇਤ ਪੜ੍ਹੋ।",
+    icon: Sparkle,
+    title: "ਬਾਣੀ ਅੰਮ੍ਰਿਤ",
+    
+    description: "ਗੁਰੂ ਜੀ ਦੀ ਪਵਿੱਤਰ ਬਾਣੀ ਦਾ ਰਾਗਾਂ ਅਨੁਸਾਰ ਅਰਥ।",
     testId: "card-nav-baani",
   },
   {
     href: "/baani-audio",
     icon: Headphones,
-    title: "ਬਾਣੀ ਆਡੀਓ",
-    subtitle: "Sacred Hymns — Audio",
-    description: "ਗੁਰੂ ਜੀ ਦੀਆਂ ਬਾਣੀਆਂ ਦਾ ਕੀਰਤਨ — ਉੱਚ ਪੱਧਰੀ ਰਾਗੀਆਂ ਦੀ ਆਵਾਜ਼ ਵਿੱਚ।",
+    title: "ਗੁਰਬਾਣੀ ਕੀਰਤਨ",
+    
+    description: "ਗੁਰੂ ਜੀ ਦੀ ਪਵਿੱਤਰ ਬਾਣੀ ਦਾ ਕੀਰਤਨ ਅਤੇ ਰੂਹਾਨੀ ਸ਼ਾਂਤੀ ਦਾ ਅਨੁਭਵ।",
     testId: "card-nav-baani-audio",
   },
   {
     href: "/gurdwara-sahib",
     icon: Building2,
-    title: "ਗੁਰਦੁਆਰਾ ਸਾਹਿਬ",
-    subtitle: "Historic Shrines",
-    description: "ਗੁਰੂ ਜੀ ਨਾਲ ਜੁੜੇ 44 ਇਤਿਹਾਸਕ ਗੁਰਦੁਆਰਿਆਂ ਦਾ ਵੇਰਵਾ।",
+    title: "ਇਤਿਹਾਸਕ ਗੁਰਧਾਮ",
+    
+    description: "ਗੁਰੂ ਜੀ ਨਾਲ ਸੰਬੰਧਿਤ ਇਤਿਹਾਸਕ ਗੁਰਧਾਮਾਂ ਦੇ ਪਵਿੱਤਰ ਦਰਸ਼ਨ ਅਤੇ ਜਾਣਕਾਰੀ।",
     testId: "card-nav-gurdwaras",
   },
 ];
@@ -54,10 +54,10 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3" data-testid="text-explore-title">
-              ਵਿਸ਼ੇ ਖੋਜੋ
+              ਗੁਰਮਤਿ ਵਿਚਾਰ
             </h2>
             <p className="text-lg text-muted-foreground">
-              ਹੇਠਾਂ ਦਿੱਤੇ ਭਾਗਾਂ ਵਿੱਚੋਂ ਆਪਣੀ ਪਸੰਦ ਅਨੁਸਾਰ ਜਾਣਕਾਰੀ ਹਾਸਲ ਕਰੋ
+              ਗੁਰਬਾਣੀ ਅਤੇ ਆਤਮਕ ਗਿਆਨ
             </p>
           </motion.div>
 

@@ -44,8 +44,8 @@ export function Hero() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ (1 ਅਪਰੈਲ 1621 – 24 ਨਵੰਬਰ 1675) ਸਿੱਖਾਂ ਦੇ ਨੌਵੇਂ ਗੁਰੂ ਸਨ।
-            ਉਨ੍ਹਾਂ ਨੂੰ ਹਿੰਦ ਦੀ ਚਾਦਰ ਕਹਿ ਕੇ ਸਨਮਾਨਿਆ ਜਾਂਦਾ ਹੈ, ਕਿਉਂਕਿ ਉਨ੍ਹਾਂ ਨੇ ਧਰਮ ਦੀ ਰਾਖੀ ਲਈ ਮਹਾਨ ਕੁਰਬਾਨੀ ਦਿੱਤੀ।
+            ਸ੍ਰੀ ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ (1 ਅਪਰੈਲ 1621 – 24 ਨਵੰਬਰ 1675) ਸਿੱਖਾਂ ਦੇ ਨੌਵੇਂ ਗੁਰੂ ਹਨ।
+            ਉਨ੍ਹਾਂ ਨੂੰ ਹਿੰਦ ਦੀ ਚਾਦਰ ਕਹਿ ਕੇ ਸਨਮਾਨਿਆ ਜਾਂਦਾ ਹੈ, ਕਿਉਂਕਿ ਉਨ੍ਹਾਂ ਨੇ ਧਰਮ ਦੀ ਰਾਖੀ ਲਈ ਮਹਾਨ ਕੁਰਬਾਨੀਆਂ ਦਿੱਤੀਆਂ।
           </motion.p>
 
           <motion.div
@@ -56,10 +56,10 @@ export function Hero() {
           >
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-orange-500 to-primary" />
             <p className="text-2xl sm:text-3xl font-semibold text-primary leading-relaxed" data-testid="text-hero-quote">
-              "ਕਾਹੂ ਕਉ ਦੇਤੁ ਨ ਡਰੈ, ਨਾਹੁ ਡਰਾਵੈ।"
+              "ਭੈ ਕਾਹੂ ਕਉ ਦੇਤ ਨਹਿ ਨਹਿ ਭੈ ਮਾਨਤ ਆਨ।।"
             </p>
             <p className="mt-3 text-sm sm:text-base text-muted-foreground" data-testid="text-hero-quote-meaning">
-              ਕਿਸੇ ਨੂੰ ਭੈ ਨਹੀਂ ਦਿੰਦੇ, ਨਾ ਕਿਸੇ ਤੋਂ ਡਰਦੇ ਹਨ
+              ਉਹ ਨਿਰਭਉ ਹੋ ਕੇ ਜੀਵਨ ਜੀਉਂਦਾ ਹੈ — ਨਾ ਕਿਸੇ ਨੂੰ ਡਰਾਉਂਦਾ ਹੈ ਤੇ ਨਾ ਕਿਸੇ ਤੋਂ ਡਰਦਾ ਹੈ।
             </p>
           </motion.div>
 
