@@ -1,5 +1,4 @@
 import { BaaniViewer } from "@/components/BaaniViewer";
-import { AudioSection } from "@/components/AudioSection";
 import { Footer } from "@/components/Footer";
 
 export default function BaaniPage() {
@@ -7,7 +6,6 @@ export default function BaaniPage() {
     <div className="min-h-screen bg-background text-foreground" data-testid="page-baani">
       <div className="pt-16 md:pt-20">
         <BaaniViewer />
-        <AudioSection />
       </div>
       <Footer />
     </div>

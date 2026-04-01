@@ -6,8 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { href: "/jeevni", label: "ਜੀਵਨੀ", testId: "link-jeevni" },
-  { href: "/baani", label: "ਬਾਣੀ", testId: "link-baani" },
-  { href: "/gurdwara-sahib", label: "ਗੁਰਦੁਆਰਾ ਸਾਹਿਬ", testId: "link-gurdwaras" },
+  { href: "/baani", label: "ਬਾਣੀ ਅੰਮ੍ਰਿਤ", testId: "link-baani" },
+  { href: "/baani-audio", label: "ਗੁਰਬਾਣੀ ਕੀਰਤਨ", testId: "link-baani-audio" },
+  { href: "/gurdwara-sahib", label: "ਇਤਿਹਾਸਕ ਗੁਰਧਾਮ", testId: "link-gurdwaras" },
 ];
 
 export function Header() {
